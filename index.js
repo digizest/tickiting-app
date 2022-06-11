@@ -25,6 +25,10 @@ app.use(cors({
 app.use('/api/users' , userRouter )
 app.use('/ticket',ticketRouter)
 
+app.use('/test' , (req ,res)=>{
+    res.send("hello heroku")
+})
+
 
 
 //server connection
